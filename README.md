@@ -2,54 +2,65 @@
 
 EcoSwap es una aplicación web diseñada para fomentar la economía circular, permitiendo a los usuarios intercambiar artículos de segunda mano de manera sencilla y segura.
 
-Este proyecto sirve como base académica para aprender el flujo de trabajo profesional en GitHub, incluyendo la gestión de **Issues**, **Milestones** y **Projects**.
+Este proyecto sirve como base académica para aprender el flujo de trabajo profesional en GitHub.
 
 ---
 
-## 🚀 Listado de Features Planificados
+## 📋 Tabla de Features para GitHub Projects
+
+Usa esta tabla para cargar tus **Issues** en el Project board. Cada fila representa una tarea que debe ser movida a través de las columnas (Todo, In Progress, Done).
+
+| Título de la Issue | Descripción / Criterios de Aceptación | Labels | Milestone |
+| :--- | :--- | :--- | :--- |
+| **Setup: Estructura base** | Crear carpetas frontend/backend y archivo .gitignore. | `setup` | v1.0 - MVP |
+| **Setup: Base de Datos** | Configurar el esquema inicial de tablas en PostgreSQL. | `backend` | v1.0 - MVP |
+| **Auth: Registro de Usuarios** | Crear el formulario de registro con validación de email. | `frontend` | v1.0 - MVP |
+| **Auth: Login con JWT** | Implementar autenticación segura en el servidor. | `backend` | v1.0 - MVP |
+| **Catalog: Subir Producto** | Formulario para cargar nombre, foto y categoría. | `frontend` | v1.0 - MVP |
+| **Catalog: Feed Principal** | Mostrar lista de productos disponibles en tarjetas. | `frontend` | v1.0 - MVP |
+| **Interaction: Botón Interés** | Notificar al dueño cuando alguien quiere su producto. | `logic` | v1.1 - Beta |
+| **Chat: Mensajería Básica** | Interfaz simple para coordinar el intercambio. | `frontend` | v1.1 - Beta |
+| **Fix: Imágenes Estiradas** | Corregir CSS para que las fotos no pierdan proporción. | `bug` | v1.2 - Release |
+| **Docs: Documentación API** | Redactar guía de uso de los endpoints (Swagger). | `docs` | v1.2 - Release |
+
+---
+
+## 🚀 Listado Detallado de Features
 
 ### 🔐 1. Gestión de Usuarios y Seguridad
 * **Registro e Inicio de Sesión:** Sistema de autenticación seguro mediante JWT.
-* **Perfiles Personalizados:** Cada usuario puede gestionar su información, foto de perfil y ver su historial de intercambios.
-* **Validaciones de Seguridad:** Protección de rutas y validación de datos en el lado del servidor.
+* **Perfiles Personalizados:** Gestión de información y fotos de perfil.
 
 ### 📦 2. Catálogo y Gestión de Productos
-* **Publicación de Artículos:** Formulario dinámico para subir fotos (con previsualización), descripciones y estados del producto.
-* **Exploración (Feed):** Muro principal con scroll infinito o paginación para ver los productos más recientes.
-* **Buscador Inteligente:** Filtros avanzados por categoría (Ropa, Electrónica, Hogar) y búsqueda por palabras clave.
+* **Publicación de Artículos:** Formulario dinámico para fotos y descripción.
+* **Buscador Inteligente:** Filtros por categoría (Ropa, Electrónica, Hogar).
 
 ### 🤝 3. Sistema de Intercambio (Core)
-* **Botón "Me Interesa":** Sistema de notificaciones en tiempo real al dueño del producto.
-* **Chat Interno:** Mensajería integrada para coordinar puntos de encuentro y detalles del intercambio.
-* **Confirmación de Match:** Flujo para marcar un intercambio como "Exitoso" y retirar el producto del catálogo.
-
-### 🛠️ 4. Infraestructura y Calidad
-* **Contenedores con Docker:** Configuración completa con `docker-compose` para base de datos y aplicación.
-* **CI/CD con GitHub Actions:** Ejecución automatizada de pruebas unitarias en cada Pull Request.
-* **Documentación de API:** Documentación interactiva de todos los endpoints disponibles.
+* **Botón "Me Interesa":** Notificaciones al dueño del producto.
+* **Chat Interno:** Mensajería integrada para coordinación.
 
 ---
 
 ## 📅 Hoja de Ruta (Milestones)
 
-| Hito | Objetivo | Estado |
-| :--- | :--- | :--- |
-| **v1.0 - MVP** | Autenticación básica y listado de productos. | 🏗️ En desarrollo |
-| **v1.1 - Beta** | Sistema de chat y notificaciones de interés. | ⏳ Pendiente |
-| **v1.2 - Release** | Pulido de UI, corrección de bugs y despliegue final. | ⏳ Pendiente |
+| Hito | Objetivo |
+| :--- | :--- |
+| **v1.0 - MVP** | Autenticación básica y listado de productos. |
+| **v1.1 - Beta** | Sistema de chat y notificaciones de interés. |
+| **v1.2 - Release** | Pulido de UI, corrección de bugs y despliegue. |
 
 ---
 
-## 💻 Tech Stack Sugerido
+## 💻 Tech Stack
 * **Frontend:** React / Next.js
-* **Backend:** Node.js (Express) o Python (FastAPI/Django)
-* **Base de Datos:** PostgreSQL
-* **DevOps:** Docker & GitHub Actions
+* **Backend:** Node.js / Express
+* **DB:** PostgreSQL
+* **Infra:** Docker
 
 ---
 
-## 👥 Contribución
-Este es un proyecto educativo. Para contribuir:
-1. Elige una **Issue** del Backlog.
-2. Mueve la tarjeta a **In Progress** en el Project board.
-3. Crea un Pull Request vinculando el número de la tarea (ej: `Closes #1`).
+## 👥 Instrucciones para Estudiantes
+1. Selecciona una fila de la **Tabla de Features**.
+2. Crea una **Issue** en el repositorio con ese título y descripción.
+3. Asígnale el **Milestone** correspondiente.
+4. Mueve la tarjeta en el **Project Board** según tu progreso.
